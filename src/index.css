@@ -19,12 +19,13 @@ body {
 }
 
 section {
+  text-align: center;
   min-height: 100vh;
+  padding: 2rem;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 
 section:nth-of-type(2n) {
@@ -50,7 +51,6 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 1rem;
 }
 
 h1, h2 {
@@ -71,7 +71,7 @@ h2:hover {
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -90,6 +90,7 @@ button {
   color: white;
   border: 1px solid hsl(var(--border));
   padding: 0.75rem 1.5rem;
+  margin: 1rem;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
@@ -97,7 +98,7 @@ button {
 }
 
 button:hover {
-  background-color: hsl(var(--border));
+  background-color: hsl(var(--background));
 }
 
 button:active {
@@ -114,15 +115,14 @@ img {
 input, textarea, select {
   font-family: inherit;
   font-size: 1rem;
+  border: 1px solid hsl(var(--border));
+  color: #ffffff;
+  background: #080808;
+  border-radius: 6px;
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   margin-bottom: 1rem;
   width: 100%;
-}
-
-.text-center {
-  text-align: center;
+  display: block;
 }
 
 .hidden {
@@ -156,4 +156,57 @@ input, textarea, select {
 .show-right {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+  }
 }

@@ -39,26 +39,9 @@
   margin-bottom: 1rem;
 }
 
-.contact-box form label,
-.contact-box form input,
-.contact-box form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
 .contact-box form label {
   font-size: 14px;
   margin: 0.5rem 0;
-}
-
-.contact-box form input,
-.contact-box form textarea {
-  padding: 0.5rem;
-  border: 1px solid hsl(var(--border));
-  border-radius: 6px;
-  background: #080808;
-  color: #ffffff;
 }
 
 .contact-box button {

@@ -33,7 +33,7 @@ const ProjectsSection = () => {
 
     return (
         <section className="projects-section">
-            <div className="container">
+            <div className="container projects-content">
                 <div className="projects-heading" ref={ref}>
                     <h2>Projekty</h2>
                     <p>Niekoľko z mojich prác</p>

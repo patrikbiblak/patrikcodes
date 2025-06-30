@@ -35,7 +35,7 @@ const App = () => {
             <Route path="/src/pages/ContactPage.js" element={<ContactPage />}/>
           </Routes>
         </main>
-        <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+        {/* <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} /> */}
         <Footer />
       </div>
     </Router>

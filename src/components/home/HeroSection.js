@@ -9,18 +9,19 @@ const HeroSection = () => {
 
     return (
         <section className="hero-section">
-            <div className="container" ref={ref}>
-                <h1>PatrikCodes</h1>
+            <div className="container hero-content" ref={ref}>
                 
-                <p>Pretváram nápady na moderné a kreatívne webové stránky, ktoré vyniknú v digitálnom svete. Vytvorme spolu online zážitok, ktorý zaujme podľa vašich predstáv.</p>
+                    <h1>PatrikCodes</h1>
 
-                <button>
-                    <Link to="">Projekty</Link>
-                </button>
+                    <p>Pretváram nápady na moderné a kreatívne webové stránky, ktoré vyniknú v digitálnom svete. Vytvorme spolu online zážitok, ktorý zaujme podľa vašich predstáv.</p>
 
-                <button>
-                    <Link to="">Kontakt</Link>
-                </button>
+                    <button>
+                        <Link to="">Projekty</Link>
+                    </button>
+
+                    <button>
+                        <Link to="">Kontakt</Link>
+                    </button>
             </div>
         </section>
     )

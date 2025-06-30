@@ -1,16 +1,18 @@
-.skills-section {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 50px 0;
-  text-align: center;
-  min-height: 100vh;
+.skills-content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 4rem;
   text-align: left;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .skill {
@@ -28,7 +30,6 @@
   content: '';
   display: block;
   height: 10px;
-  width: 400px;
   background: linear-gradient(to right, #ffffff var(--level), #474747 var(--level));
   border-radius: 30px;
 }

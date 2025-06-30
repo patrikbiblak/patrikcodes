@@ -12,11 +12,12 @@ const SkillsSection = () => {
     { name: 'JavaScript', level: 55 },
     { name: 'React', level: 50 },
     { name: 'GIT', level: 70 },
+    { name: 'SQL', level: 0 },
   ];
 
     return (
         <section className="skills-section">
-            <div className="container" ref={ref}>
+            <div className="container skills-content" ref={ref}>
                 <h2>Zručnosti</h2>
 
                 <div className="skills-grid">
