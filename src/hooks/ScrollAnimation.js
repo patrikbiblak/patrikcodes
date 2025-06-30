@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const ScrollAnimation = (ref, { threshold = 0.3, immediate = false, customClass = '' } = {}) => {
   useEffect(() => {
