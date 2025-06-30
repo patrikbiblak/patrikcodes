@@ -11,7 +11,7 @@ const AboutSection = () => {
                     <p>Rád budujem veci od nuly a spolupracujem s ľuďmi, ktorí chcú kvalitný a spoľahlivý web – či už ide o portfólio, blog, e-shop alebo firemnú stránku.</p>
                 </div>
                 <div className="about-item">
-                    <img src="me_photo.png" alt="me" />
+                    <img src="images/profile.png" alt="profile" />
                 </div>
             </div>
         </section>
