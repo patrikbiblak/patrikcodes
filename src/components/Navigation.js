@@ -18,7 +18,7 @@ const Navigation = () => {
         <div className="navigation-content">
           <Link to="/">
             <img
-              src="/logos/logo_transparent.png"
+              src="logos/logo_transparent.png"
               alt="patrikcodes.sk"
               className="navigation-logo"
             />
