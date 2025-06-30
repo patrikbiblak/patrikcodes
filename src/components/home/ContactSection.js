@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import "../../styles/contactsection.css";
 import ScrollAnimation from "../../hooks/ScrollAnimation";
-import { useRef } from 'react';
 
 const ContactSection = () => {
   const leftRef = useRef(null);
