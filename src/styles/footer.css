@@ -1,6 +1,6 @@
 footer {
   background-color: hsla(var(--background), 0.95);
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   text-align: left;
 }
 
@@ -43,8 +43,6 @@ footer h4 {
 }
 
 footer p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
   color: #848484;
 }
 
@@ -75,7 +73,7 @@ footer > p {
   text-align: center;
   font-size: 0.9rem;
   border-top: 2px solid hsl(var(--border));
-  padding-top: 2rem;
+  padding: 1.8rem;
   margin: 0 auto;
   margin-bottom: 0;
 }
