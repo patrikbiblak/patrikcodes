@@ -53,17 +53,19 @@
 }
 
 .modal-overlay.fade-out {
-  animation: fadeOutOverlay 0.3s ease forwards;
+  animation: fadeOutOverlay 0.3s ease backwards;
 }
 
 .modal-container {
-  background: white;
-  border-radius: 8px;
-  padding: 24px;
-  width: 90%;
-  max-width: 480px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   position: relative;
+  width: 90%;
+  max-width: 500px;
+  max-height: 600px;
+  background-color: hsla(var(--background));
+  border: 1px solid hsl(var(--border));
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px;
 }
 
 .modal-container.blow-up {
@@ -71,5 +73,63 @@
 }
 
 .modal-container.blow-down {
-  animation: blowDown 0.3s ease forwards;
+  animation: blowDown 0.3s ease backwards;
+}
+
+.modal-close-btn {
+  position: absolute;
+  padding: 0;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 0.5rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 4px;
+  background: #080808;
+  color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid #555;
+}
+
+.submit-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d0d0d0;
 }

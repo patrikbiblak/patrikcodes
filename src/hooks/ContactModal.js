@@ -31,21 +31,21 @@ const ContactModal = ({ isOpen, onClose }) => {
         <button className="modal-close-btn" onClick={handleClose}>
           &times;
         </button>
-        <h2>Contact Us</h2>
+        <h3>Ozvi sa mi</h3>
         <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
           <label>
-            Name
-            <input type="text" name="name" required placeholder="Your name" />
+            Meno
+            <input type="text" name="name" required placeholder="" />
           </label>
           <label>
             Email
-            <input type="email" name="email" required placeholder="Your email" />
+            <input type="email" name="email" required placeholder="" />
           </label>
           <label>
-            Message
-            <textarea name="message" required placeholder="Your message" rows="4" />
+            Správa
+            <textarea name="message" required placeholder="" rows="5" />
           </label>
-          <button type="submit" className="submit-btn">Send</button>
+          <button type="submit" className="submit-btn">Odoslať</button>
         </form>
       </div>
     </div>
