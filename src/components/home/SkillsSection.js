@@ -16,7 +16,7 @@ const SkillsSection = () => {
 
     return (
         <section className="skills-section">
-            <div ref={ref}>
+            <div className="container" ref={ref}>
                 <h2>Zručnosti</h2>
 
                 <div className="skills-grid">

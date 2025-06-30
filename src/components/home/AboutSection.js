@@ -11,7 +11,7 @@ const AboutSection = () => {
 
   return (
     <section className="about-section">
-      <div className="about-content">
+      <div className="container about-content">
         <div className="about-item" ref={leftRef}>
           <h2>O mne</h2>
           <p>Venujem sa front-end vývoju a neustále sa učím nové technológie, aby som mohol prinášať funkčné a vizuálne príťažlivé riešenia.</p>

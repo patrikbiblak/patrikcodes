@@ -39,6 +39,7 @@ const ContactSection = () => {
 
   return (
     <section className="contact-section">
+      <div className="container">
         <div className="contact-header" ref={ref}>
           <h2>Ozvite sa mi!</h2>
           <p>Rád by som počul o vašom projekte. Poďme spolu vytvoriť niečo úžasné!</p>
@@ -96,6 +97,7 @@ const ContactSection = () => {
               );
             })}
           </div>
+        </div>
         </div>
     </section>
   );
