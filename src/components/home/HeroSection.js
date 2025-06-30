@@ -8,10 +8,10 @@ const HeroSection = () => {
                 <h1>PatrikCodes</h1>
                 <p>Pretváram nápady na moderné a kreatívne webové stránky, ktoré vyniknú v digitálnom svete. Vytvorme spolu online zážitok, ktorý zaujme podľa vašich predstáv.</p>
                 <button>
-                    <Link to="/src/pages/ProjectsPage.js">Projekty</Link>
+                    <Link to="">Projekty</Link>
                 </button>
                 <button>
-                    <Link to="/src/pages/ContactPage.js">Kontakt</Link>
+                    <Link to="">Kontakt</Link>
                 </button>
             </div>
         </section>
