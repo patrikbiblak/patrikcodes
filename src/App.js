@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Routes, Route} from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -9,6 +9,10 @@ import Footer from "./components/Footer";
 import ContactModal from "./hooks/ContactModal";
 
 const App = () => {
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual';
+  }
+
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
