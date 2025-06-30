@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
+import { useRef } from 'react';
 import "../../styles/herosection.css";
+import ScrollAnimation from "../../hooks/ScrollAnimation";
 
 const HeroSection = () => {
+    const ref = useRef(null);
+    ScrollAnimation(ref, { immediate: true });
+
     return (
         <section className="hero-section">
-            <div>
+            <div ref={ref}>
                 <h1>PatrikCodes</h1>
                 <p>Pretváram nápady na moderné a kreatívne webové stránky, ktoré vyniknú v digitálnom svete. Vytvorme spolu online zážitok, ktorý zaujme podľa vašich predstáv.</p>
                 <button>

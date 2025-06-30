@@ -22,3 +22,15 @@
 .hero-section button {
     margin: 0 1rem;  
 }
+
+.hero-section > div {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease, transform 2s ease;
+  transition-delay: 0.1s;
+}
+
+.hero-section > div.show {
+  opacity: 1;
+  transform: translateY(0);
+}
