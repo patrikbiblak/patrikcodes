@@ -39,23 +39,24 @@ const ProjectsSection = () => {
                     <p>Niekoľko z mojich prác</p>
                 </div>
 
-                <button
-                    className="scroll-button left"
-                    onClick={() => scrollToPage(Math.max(0, activePage - 1))}
-                    aria-label="Scroll left"
-                >
-                    &#8249;
-                </button>
-
-                <button
-                    className="scroll-button right"
-                    onClick={() => scrollToPage(Math.min(totalPages - 1, activePage + 1))}
-                    aria-label="Scroll right"
-                >
-                    &#8250;
-                </button>
 
                 <div className="carousel-container" onScroll={handleScroll} ref={scrollRef}>
+                    <button
+                        className="scroll-button left"
+                        onClick={() => scrollToPage(Math.max(0, activePage - 1))}
+                        aria-label="Scroll left"
+                    >
+                        &#8249;
+                    </button>
+
+                    <button
+                        className="scroll-button right"
+                        onClick={() => scrollToPage(Math.min(totalPages - 1, activePage + 1))}
+                        aria-label="Scroll right"
+                    >
+                        &#8250;
+                    </button>
+
                     <div className="carousel-track">
                         {[...Array(boxes)].map((_, index) => (
                             <div key={index} className="project-box" />
