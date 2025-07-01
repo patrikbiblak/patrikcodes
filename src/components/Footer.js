@@ -8,7 +8,7 @@ const Footer = () => {
   <div className="footer-columns">
     <div className="footer-1">
         <img
-                src="logos/logo_transparent.png"
+                src="logos/logo.png"
                 alt="patrikcodes.sk"
                 className="navigation-logo"
         />
