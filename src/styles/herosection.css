@@ -19,6 +19,10 @@
     margin-bottom: 2rem;
 }
 
+.hero-section a {
+  color: var(--text-primary);
+}
+
 .hero-section > div {
   opacity: 0;
   transform: translateY(40px);

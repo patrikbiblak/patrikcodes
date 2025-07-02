@@ -59,9 +59,9 @@ const Footer = () => {
         <div>
             <h4>Informácie</h4>
             <ul>
-                <li><a href="#about">O mne</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="/">O mne</a></li>
+                <li><a href="/">Projekty</a></li>
+                <li><a href="/">Kontakt</a></li>
             </ul>
         </div>
     </div>
