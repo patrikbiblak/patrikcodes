@@ -177,12 +177,17 @@
 
   .modal-container {
     width: auto;
-    max-width: 400px;
     padding: 1rem;
     margin: 0;
   }
 
   .modal-contact-form {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-container {
+    max-width: 75vw;
   }
 }
