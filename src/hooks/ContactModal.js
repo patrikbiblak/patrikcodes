@@ -79,16 +79,16 @@ const ContactModal = ({ isOpen, onClose }) => {
         <p className="modal-subtitle">Ste pripravení začať nový projekt? Poďme sa porozprávať!</p>
 
         <div className="modal-grid">
-          <form className="modal-contact-form">
+          <form onSubmit={handleSubmit} className="modal-contact-form">
             <h4>Pošli správu</h4>
             <label htmlFor="nameModal">Meno</label>
-            <input id="nameModal" name="name" type="text" required />
+            <input onChange={handleChange} id="nameModal" name="name" type="text" required />
 
             <label htmlFor="emailModal">Email</label>
-            <input id="emailModal" name="email" type="email" required />
+            <input onChange={handleChange} id="emailModal" name="email" type="email" required />
 
             <label htmlFor="messageModal">Správa</label>
-            <textarea id="messageModal" name="message" rows="5" required />
+            <textarea onChange={handleChange} id="messageModal" name="message" rows="5" required />
 
             <button type="submit" className="submit-btn">Poslať správu</button>
           </form>
