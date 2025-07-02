@@ -81,11 +81,14 @@
   top: 0;
   right: 0;
   background: transparent;
+  display: inline-block;
+  pointer-events: auto;
   border: none;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0;
+  z-index: 10;
 }
 
 .modal-subtitle {
@@ -157,4 +160,29 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .modal-container .contact-details {
+    display: none;
+  }
+
+  .modal-close-btn {
+    width: inherit;
+  }
+
+  .modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-container {
+    width: auto;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .modal-contact-form {
+    width: 100%;
+  }
 }
