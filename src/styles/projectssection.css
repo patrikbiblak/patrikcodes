@@ -3,7 +3,7 @@
 }
 
 .carousel-container {
-  width: 1300px;
+  width: 1310px;
   overflow-x: hidden;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
