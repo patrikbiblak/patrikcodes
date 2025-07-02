@@ -59,7 +59,7 @@
 }
 
 .dot.active {
-  background-color: #ffffff;
+  background-color: var(--text-primary);
 }
 
 
