@@ -1,10 +1,35 @@
 import { useState, useEffect } from "react";
+import { Mail, Phone, MapPin } from 'lucide-react';
 import PropTypes from "prop-types";
 import "../styles/contactmodal.css";
 
 const ContactModal = ({ isOpen, onClose }) => {
   const [isVisible, setIsVisible] = useState(isOpen);
   const [isClosing, setIsClosing] = useState(false);
+
+  const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: '',
+    });
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log('Form submitted:', formData);
+    };
+  
+    const handleChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    };
+  
+    const contactDetails = [
+      { icon: Mail, label: 'Email', value: 'patrik.biblak@gmail.com' },
+      { icon: Phone, label: 'Telefon', value: '+421 918 755 276' },
+      { icon: MapPin, label: 'Poloha', value: 'Slovensko' },
+    ];
 
   useEffect(() => {
     if (isOpen) {
@@ -49,24 +74,51 @@ const ContactModal = ({ isOpen, onClose }) => {
         >
           &times;
         </button>
-        <h3 id="contact-modal-title">Ozvi sa mi</h3>
-        <form className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Meno</label>
-            <input id="name" type="text" name="name" required />
+
+        <h3 id="modal-title">Kontaktuj ma</h3>
+        <p className="modal-subtitle">Ste pripravení začať nový projekt? Poďme sa porozprávať!</p>
+
+        <div className="modal-grid">
+          <form className="modal-contact-form">
+            <h4>Pošli správu</h4>
+            <label htmlFor="nameModal">Meno</label>
+            <input id="nameModal" name="name" type="text" required />
+
+            <label htmlFor="emailModal">Email</label>
+            <input id="emailModal" name="email" type="email" required />
+
+            <label htmlFor="messageModal">Správa</label>
+            <textarea id="messageModal" name="message" rows="5" required />
+
+            <button type="submit" className="submit-btn">Poslať správu</button>
+          </form>
+
+          <div className="contact-details">
+              <h4>Kontaktné údaje</h4>
+              <ul className="contact-info-list">
+                {contactDetails.map((detail) => {
+                  const Icon = detail.icon;
+                  return (
+                    <div key={detail.label} className="contact-info-item">
+                      <Icon className="icon" />
+                      <div>
+                        <p>{detail.label}</p>
+                        <p>{detail.value}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </ul>
+
+              <div className="why-work">
+                <h4>Prečo spolupracovať so mnou?</h4>
+                <p>• Rýchla odozva (zvyčajne do 24 hodín)</p>
+                <p>• Riešenia na mieru podľa vašich potrieb</p>
+                <p>• Pokračujúca podpora a údržba</p>
+            </div>
+
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input id="email" type="email" name="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Správa</label>
-            <textarea id="message" name="message" required rows="5" />
-          </div>
-          <button type="submit" className="submit-btn">
-            Odoslať
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   );

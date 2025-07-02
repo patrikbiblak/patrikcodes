@@ -2,7 +2,7 @@
   --background: 0, 0%, 5.5%;
   --foreground: 0, 0%, 100%;
   --muted-foreground: 0, 0%, 80%;
-  --border: 0, 0%, 10%;
+  --border: 0, 0%, 20%;
 }
 
 * {
@@ -123,6 +123,7 @@ input, textarea, select {
   margin-bottom: 1rem;
   width: 100%;
   display: block;
+  resize: vertical;
 }
 
 .hidden {

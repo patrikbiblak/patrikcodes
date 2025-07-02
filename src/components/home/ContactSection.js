@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import "../../styles/contactsection.css";
 import ScrollAnimation from "../../hooks/ScrollAnimation";
@@ -12,7 +12,7 @@ const ContactSection = () => {
   ScrollAnimation(leftRef, { customClass: 'left' });
   ScrollAnimation(rightRef, { customClass: 'right' });
   
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
