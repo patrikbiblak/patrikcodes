@@ -11,6 +11,9 @@ footer {
   flex-wrap: wrap;
   gap: 3rem;
   margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .footer-columns > div {
@@ -66,12 +69,6 @@ footer > p {
   padding: 1.8rem;
   margin: 0 auto;
   margin-bottom: 0;
-}
-
-.footer-columns {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .footer-columns.show {
