@@ -11,7 +11,6 @@
 
   /* Borders */
   --border-default: #404040;
-  --border-focus: red;
 
   /* Box shadow */
   --box-shadow: rgba(255, 255, 255, 0.12) 0px 4px 16px;
@@ -115,11 +114,6 @@ button {
 
 button:hover {
   background-color: #1a1a1a;
-}
-
-button:active {
-  background-color: #ffffff;
-  color: #000000;
 }
 
 img {
