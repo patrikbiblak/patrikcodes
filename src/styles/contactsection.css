@@ -20,9 +20,9 @@
 .contact-box {
   flex: 1;
   min-width: 300px;
-  background-color: hsla(var(--background), 0.95);
+  background-color: var(--bg-card);
   box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px;
-  border: 1px solid hsl(var(--border));
+  border: 1px solid var(--border-default);
   border-radius: 12px;
   padding: 2rem;
 }

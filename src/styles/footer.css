@@ -1,5 +1,5 @@
 footer {
-  background-color: hsla(var(--background), 0.95);
+  background-color: var(--bg-secondary);
   padding: 2rem 2rem 0 2rem;
   text-align: left;
 }
@@ -42,10 +42,6 @@ footer h4 {
   margin-bottom: 0.5rem;
 }
 
-footer p {
-  color: #848484;
-}
-
 footer ul {
   list-style: none;
   padding: 0;
@@ -56,7 +52,6 @@ footer li {
 }
 
 footer a {
-  color: #848484;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -64,15 +59,10 @@ footer a {
   transition: color 0.2s;
 }
 
-footer a:hover {
-  color: #ffffff;
-}
-
-
 footer > p {
   text-align: center;
   font-size: 0.9rem;
-  border-top: 2px solid hsl(var(--border));
+  border-top: 2px solid var(--border-default);
   padding: 1.8rem;
   margin: 0 auto;
   margin-bottom: 0;

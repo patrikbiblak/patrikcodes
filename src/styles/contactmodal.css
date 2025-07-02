@@ -65,8 +65,8 @@
 }
 
 .modal-container {
-  background-color: #000000;
-  border: 1px solid hsl(var(--border));
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-default);
   color: white;
   padding: 1.4rem;
   border-radius: 0.5rem;
@@ -131,7 +131,7 @@
 
 .why-work {
   margin-top: 1.4rem;
-  background-color: hsla(var(--background));
+  background-color: var(--bg-secondary);
   padding: 1rem;
   border: none;
   border-radius: 0.4rem;
@@ -151,7 +151,7 @@
 }
 
 .contact-info-item .icon {
-  background-color: #171717;
+  background-color: #1b1b1b;
   color: white;
   padding: 0.6rem;
   border-radius: 50%;

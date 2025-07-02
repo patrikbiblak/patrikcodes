@@ -5,7 +5,7 @@
   right: 0;
   z-index: 50;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px;
-  border-bottom: 1px solid hsl(var(--border));
+  border-bottom: 1px solid var(--border-default);
   background-color: hsla(var(--background), 0.95);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -38,9 +38,8 @@
 .navigation-link {
   font-size: 0.9rem;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
   text-decoration: none;
-  color: hsl(var(--muted-foreground));
+  color: var(--muted-foreground);
   transition: color 0.2s ease;
 }
 
