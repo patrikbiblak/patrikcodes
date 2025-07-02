@@ -1,11 +1,16 @@
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { useRef } from 'react';
+import ScrollAnimation from '../hooks/ScrollAnimation';
 import "../styles/footer.css";
 
 const Footer = () => {
+    const ref = useRef(null);
+    ScrollAnimation(ref);
+
   return (
     <footer>
-  <div className="footer-columns">
+    <div ref={ref} className="footer-columns">
     <div className="footer-1">
         <img
                 src="logos/logo.png"
@@ -66,7 +71,7 @@ const Footer = () => {
         </div>
     </div>
 
-    <p>© {new Date().getFullYear()} PatrikCodes. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} PatrikCodes. All rights reserved.</p>
     </footer>
 
   );
