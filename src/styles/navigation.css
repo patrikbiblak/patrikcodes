@@ -13,7 +13,7 @@
 
 @supports (backdrop-filter: blur(8px)) {
   .navigation {
-    background-color: hsla(var(--background), 0.6);
+    background-color: hsla(var(--bg-primary), 0.6);
   }
 }
 
@@ -28,6 +28,11 @@
   justify-content: space-between;
   align-items: center;
   height: 4rem;
+}
+
+.navigation-logo {
+  height: 2.5rem;
+  margin-left: 0;
 }
 
 .navigation-links {
@@ -51,12 +56,6 @@
   color: transparent;
 }
 
-.navigation-logo {
-  display: block;
-  margin-left: auto;
-  height: 2.5rem;
-}
-
 .navigation-link:focus {
   outline: 2px solid hsl(var(--primary));
   outline-offset: 2px;
@@ -65,5 +64,89 @@
 @media (prefers-contrast: high) {
   .navigation-link {
     font-weight: 600;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 25px;
+  background: black;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+.navigation {
+  background-color: var(--bg-primary);
+}
+
+  .navigation-links {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--bg-primary);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-default);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 40;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .navigation-links.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .navigation-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--muted-foreground);
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .navigation-links .navigation-link:hover,
+  .navigation-links .navigation-link:active {
+    color: var(--primary);
+    background-image: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
