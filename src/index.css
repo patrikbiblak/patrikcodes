@@ -95,6 +95,10 @@ h2 {
   margin-bottom: 4rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 p {
   margin-bottom: 1rem;
   color: var(--text-secondary);
@@ -185,6 +189,10 @@ input:focus {
   h2 {
     font-size: 1.75rem;
     margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 
   p {

@@ -1,3 +1,18 @@
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.contact-content.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +34,7 @@
 
 .contact-box {
   flex: 1;
-  min-width: 300px;
+  width: clamp(100px, 85vw, 100%);
   background-color: var(--bg-card);
   border: 1px solid var(--border-default);
   box-shadow: var(--box-shadow);
@@ -28,7 +43,6 @@
 }
 
 .contact-box h3 {
-  font-size: 1.4rem;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -89,4 +103,23 @@
   color: white;
   font-weight: 300;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contact-box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box form label {
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+  }
 }
