@@ -15,13 +15,10 @@ const HeroSection = () => {
 
                     <p>Pretváram nápady na moderné a kreatívne webové stránky, ktoré vyniknú v digitálnom svete. Vytvorme spolu online zážitok, ktorý zaujme podľa vašich predstáv.</p>
 
-                    <button>
-                        <Link to="">Projekty</Link>
-                    </button>
-
-                    <button>
-                        <Link to="">Kontakt</Link>
-                    </button>
+                    <div className="hero-buttons">
+                        <Link to="" className="hero-btn">Projekty</Link>
+                        <Link to="" className="hero-btn">Kontakt</Link>
+                    </div>
             </div>
         </section>
     )
