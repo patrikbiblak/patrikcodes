@@ -53,4 +53,12 @@
     transform: translateY(30px);
     padding: 0.4rem 2rem;
   }
+
+  .skill::after {
+    height: 0.4rem;
+  }
+
+  .skill span {
+    font-size: 0.8rem;
+  }
 }
